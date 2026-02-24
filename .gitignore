@@ -4,6 +4,7 @@
 *.zip
 *.pkl
 *.joblib
+~$*.xlsx
 
 # python venv
 .venv/
