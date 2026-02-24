@@ -1,0 +1,12 @@
+# data/binaries
+*.xlsx
+*.xls
+*.zip
+*.pkl
+*.joblib
+
+# python venv
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
