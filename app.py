@@ -206,7 +206,17 @@ gt_df = load_table(gt_file)
 colL, colR = st.columns([1, 1.2], gap="large")
 with colR:
     st.subheader("Similitude rule")
+
     st.latex(r"R_1 = \frac{1-\beta_1^{-1}}{\beta_1^{-1}-\beta_2^{-1}}")
+
+    # First-order crack-growth (experimental) rule
+    st.latex(
+        r"\left(\frac{da}{dN}\right)_{\mathrm{phys}}"
+        r"=\beta_1^{-3/2}\left(\frac{da}{dN}\right)_{ts1}"
+        r"+R_1\left[\beta_1^{-3/2}\left(\frac{da}{dN}\right)_{ts1}"
+        r"-\beta_2^{-3/2}\left(\frac{da}{dN}\right)_{ts2}\right]"
+    )
+
     st.latex(r"\Delta K_{ts} = \sqrt{\beta}\,\Delta K_{\mathrm{phys}}")
 
 with colL:
